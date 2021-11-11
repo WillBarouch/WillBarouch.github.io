@@ -1,180 +1,84 @@
-.map:hover {
-
-  background-color: 	#ffffff;
+body {
+    background-color: #f4f3ee;
 }
 
-#buy {
-  width: 140px ;
-  height: 45px ;
-  background-color: 	#ffffff;
-  color: #000000;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  transition-duration: 0.2s;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Zen Kurenaido', sans-serif;
-  text-decoration: bold;
+.navbar {
+  height: 100%; 
+  width: 180px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #031b28;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-#buy:hover {
-  background-color #ffffff;
-  color: #000000;
-}
-
-body {background-color: #525252
-  ;text-align: center;}
-
-#MainText {
-  font-size: 64px;
-  font-family: 'Zen Kurenaido', sans-serif;
-  color: #FFFFFF;
-}
-
-#EventBody2 {
-
-  font-size: 20px;
-  font-family: 'Zen Kurenaido', sans-serif;
-  color: #525252;
-}
-
-#EventBody {
-
-  font-size: 20px;
-  font-family: 'Zen Kurenaido', sans-serif;
-  color: #FFFFFF;
-}
-
-#EventHead {
-
-  font-size: 30px;
-  font-family: 'Zen Kurenaido', sans-serif;
-  color: #FFFFFF;
-}
-
-button {
-  width: 140px ;
-  height: 45px ;
-  background-color: 	#525252;
-  color: 	#ffffff;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  transition-duration: 0.2s;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Zen Kurenaido', sans-serif;
-  text-decoration: bold;
-}
-
-
-button:hover
-{
-text-decoration: underline;
-text-decoration-thickness: 2px;
-}
-
-form {
-  font-size: 20px;
-  font-family: 'Zen Kurenaido', sans-serif;
-  color: #FFFFFF;
-}
-
-p {
-  color: #000080;
-  text-align: center;
-
-}
-
-#modal {
-  display: none;
-  width: 300px;
-  height: 150px;
-  border:1px solid #CCC;
-  background:#EEE;
-  margin: auto;
-  border-radius: 15px;
-}
-
-
-
-#modal:target {
+.navbar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #bcb8b1;
   display: block;
+  font-family: 'Questrial', sans-serif;
 }
 
-#Header {
-  font-size: 100px;
-  padding-top: 10px;
-  padding-bottom: 1000px;
+
+.navbar a:hover {
+  color: #dba858;
 }
 
-#description {
-  margin-top: -1000px ;
 
-
+.main {
+  margin-left: 180px; 
+  padding: 0px 10px;
+  background-colour: #000000;
 }
 
-#FAQ {
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#name {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
   font-size: 30px;
+  color: #bcb8b1;
+  display: block;
+  font-family: 'Questrial', sans-serif;
+    text-align: left;
+}
 
+#style-name {
+  padding: 6px 50px 6px 16px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #F4f3ee;
+  display: block;
+  font-family: 'La Belle Aurore', cursive;
+  margin-left: 25px;
 }
 
 hr {
-  background-color: #ffffff;
+    border: .5px solid #bcb8b1;
 }
 
-/* Popup container */
-.popup {
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  display: inline-block;
-  cursor: pointer;
+  top: 40px;
 }
 
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
+.main-text-top {
+  text-decoration: none;
+  font-size: 25px;
+  color: #031b28;
+  display: block;
+  font-family: 'Questrial', sans-serif;
   text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  margin-top: 70px;
 }
