@@ -3,62 +3,61 @@ body {
 }
 
 .navbar {
-  height: 100%; 
-  width: 180px; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  left: 0;
-  background-color: #031b28;
-  overflow-x: hidden;
-  padding-top: 20px;
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #031b28;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
 .navbar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #bcb8b1;
-  display: block;
-  font-family: 'Questrial', sans-serif;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #bcb8b1;
+    display: block;
+    font-family: 'Questrial', sans-serif;
 }
 
 
 .navbar a:hover {
-  color: #dba858;
+    color: #dba858;
 }
 
 
 .main {
-  margin-left: 180px; 
-  padding: 0px 10px;
-  background-colour: #000000;
+    margin-left: 180px;
+    padding: 0px 10px;
+    background-colour: #000000;
 }
 
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 #name {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 30px;
-  color: #bcb8b1;
-  display: block;
-  font-family: 'Questrial', sans-serif;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #bcb8b1;
+    display: block;
+    font-family: 'Questrial', sans-serif;
     text-align: left;
 }
 
-#style-name {
-  padding: 6px 50px 6px 16px;
-  text-decoration: none;
-  font-size: 50px;
-  color: #F4f3ee;
-  display: block;
-  font-family: 'La Belle Aurore', cursive;
-  margin-left: 25px;
+#style-text {
+    font-size: 50px;
+    color: #031b28;
+    display: block;
+    font-family: 'La Belle Aurore', cursive;
+    text-align: center;
+    margin-top: 150px;
 }
 
 hr {
@@ -66,19 +65,32 @@ hr {
 }
 
 .photo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40px;
 }
 
 .main-text-top {
-  text-decoration: none;
-  font-size: 25px;
-  color: #031b28;
-  display: block;
-  font-family: 'Questrial', sans-serif;
-  text-align: center;
-  margin-top: 70px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 70px;
 }
+
+.logo {
+    position: relative;
+    margin-left: 10px;
+}
+
+.scroll {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
