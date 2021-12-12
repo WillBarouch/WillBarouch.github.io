@@ -31,7 +31,7 @@ body {
 
 .main {
     margin-left: 180px;
-    padding: 0px 10px;
+    padding: 0 10px;
     background-colour: #000000;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 hr {
-    border: .5px solid #bcb8b1;
+    border: 0.5px solid #bcb8b1;
 }
 
 .photo {
@@ -97,6 +97,7 @@ hr {
 .links {
     display: flex;
     justify-content: center;
+    padding-right: 70;
 
 }
 
@@ -107,9 +108,8 @@ hr {
 .gh {
     position: absolute;
     bottom: -63px;
-
-
 }
+
 
 .tooltip {
     position: relative;
@@ -117,7 +117,6 @@ hr {
     font-family: 'Questrial', sans-serif;
 }
 
-/* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 190px;
@@ -129,14 +128,11 @@ hr {
     font-family: 'Questrial', sans-serif;
     top: 100%;
     left: 50%;
-    margin-left: -95px; /* Use half of the width (120/2 = 60), to center the tooltip */
-
-    /* Position the tooltip text - see examples below! */
+    margin-left: -95px;
     position: absolute;
     z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
@@ -147,7 +143,6 @@ hr {
     font-family: 'Questrial', sans-serif;
 }
 
-/* Tooltip text */
 .tooltip2 .tooltiptext {
     visibility: hidden;
     width: 90px;
@@ -159,7 +154,8 @@ hr {
     font-family: 'Questrial', sans-serif;
     top: 100%;
     left: 50%;
-    margin-left: -45px;
+    margin-left: -13px;
+    margin-top: 56px;
     position: absolute;
     z-index: 1;
 }
