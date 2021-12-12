@@ -2,6 +2,11 @@ body {
     background-color: #f4f3ee;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 .navbar {
     height: 100%;
     width: 180px;
