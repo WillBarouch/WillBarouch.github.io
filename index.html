@@ -5,36 +5,53 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Questrial&display=swap" rel="stylesheet">
     <script type="text/javascript">
-        setTimeout(function(){
-            var _text = document.getElementById('text-over'),
-                under = document.createElement('span');
+        (function() {
+            scrollTo();
+        })();
 
-            under.className = 'text-under';
-            under.textContent = 'Under';
+        function scrollTo() {
+            const links = document.querySelectorAll('.scroll');
+            links.forEach(each => (each.onclick = scrollAnchors));
+        }
 
-            _text.append(under);
-
-            console.log(_text, under);
-        }, 10000);
+        function scrollAnchors(e, respond = null) {
+            const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+            e.preventDefault();
+            var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+            const targetAnchor = document.querySelector(targetID);
+            if (!targetAnchor) return;
+            const originalTop = distanceToTop(targetAnchor);
+            window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+            const checkIfDone = setInterval(function() {
+                const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+                if (distanceToTop(targetAnchor) === 0 || atBottom) {
+                    targetAnchor.tabIndex = '-1';
+                    targetAnchor.focus();
+                    window.history.pushState('', '', targetID);
+                    clearInterval(checkIfDone);
+                }
+            }, 100);
+        }
     </script>
+
 </head>
 
 <div class="navbar">
     <img class="logo" src="main.png" alt="logo" width=100px>
     <span id=name >William Barouch</span>
     <hr>
-    <a href="#">About</a>
-    <a href="#edu_box">Education</a>
-    <a href="#skill_box">Skills</a>
-    <a href="#">Experience</a>
-    <a href="#">Contact</a>
+    <a class="scroll" href="#">About</a>
+    <a class="scroll" href="#edu_box">Education</a>
+    <a class="scroll" href="#skill_box">Skills</a>
+    <a class="scroll" href="#">Experience</a>
+    <a class="scroll" href="#">Contact</a>
 </div>
 
 <div class="main">
     <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Circle_%28transparent%29.png" alt="photo of me" width=300px>
 
     <span class="main-text-top">Hey, I'm Will!</span>
-    <span class="main-text-top">I'm currently a student, but have interests in coding, medicine and engineering!</span>
+    <span class="main-text-top">I'm currently a student, but have interests in coding, medicine and engineering</span>
 
     <div class="links">
         <div>
@@ -90,10 +107,10 @@
         <span class="edu_top_text">- Project Management</span>
         <span class="skill-top-text">- UI/UX Design</span>
         <span class="skill-top-text">- Programming</span>
-        <span class="main-text">Experince using HTML/CSS for website development</span>
-        <span class="main-text">Experince using Python for data manipulation and visualisation</span>
-        <span class="main-text">Experince using Python for machine learning</span>
-        <span class="main-text">Experince using Java</span>
+        <span class="main-text">HTML/CSS/JS for website development</span>
+        <span class="main-text">Python for data manipulation and visualisation</span>
+        <span class="main-text">Python for machine learning</span>
+        <span class="main-text">Java</span>
         <span class="skill-top-text">- 3D Design</span>
 
 
