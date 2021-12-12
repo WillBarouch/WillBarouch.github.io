@@ -4,37 +4,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Questrial&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
-        (function() {
-            scrollTo();
-        })();
-
-        function scrollTo() {
-            var links = document.getElementsByTagName('a');
-            for (var i = 0; i < links.length; i++) {
-                var link = links[i];
-                if ((link.href && link.href.indexOf('#') != -1) && ((link.pathname == location.pathname) || ('/' + link.pathname == location.pathname)) && (link.search == location.search)) {
-                    link.onclick = scrollAnchors;
-                }
-            }
-        }
-
-        function scrollAnchors(e, respond = null) {
-            const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+        $(".scroll").on("click", function (e) {
+            // 1
             e.preventDefault();
-            var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-            const targetAnchor = document.querySelector(targetID);
-            if (!targetAnchor) return;
-            const originalTop = distanceToTop(targetAnchor);
-            window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-            const checkIfDone = setInterval(function() {
-                const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-                if (distanceToTop(targetAnchor) === 0 || atBottom) {
-                    targetAnchor.tabIndex = '-1';
-                    targetAnchor.focus();
-                    window.history.pushState('', '', targetID);
-                    clearInterval(checkIfDone);
-                }
+            // 2
+            const href = $(this).attr("href");
+            // 3
+            $("html, body").animate({ scrollTop: $(href).offset().top }, 800);
+        });
     </script>
 
 </head>
