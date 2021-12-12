@@ -117,7 +117,7 @@ hr {
 .links {
     display: flex;
     justify-content: center;
-    padding-right: 70;
+    padding-right: 70px;
 
 }
 
@@ -190,6 +190,11 @@ hr {
     margin-top: 725px;
 }
 
+#skill_top {
+    position: relative;
+    margin-top: 200px;
+}
+
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -223,4 +228,34 @@ html {
 
 a {
     text-decoration: none;
+}
+
+.skill-top-text {
+    text-decoration: none;
+    font-size: 25px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+#scroll_message {
+    text-decoration: none;
+    font-size: 35px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 250px;
+    animation: fadein 3s steps(1000, end);
+
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

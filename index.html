@@ -4,6 +4,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Questrial&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        setTimeout(function(){
+            var _text = document.getElementById('text-over'),
+                under = document.createElement('span');
+
+            under.className = 'text-under';
+            under.textContent = 'Under';
+
+            _text.append(under);
+
+            console.log(_text, under);
+        }, 10000);
+    </script>
 </head>
 
 <div class="navbar">
@@ -12,7 +25,7 @@
     <hr>
     <a href="#">About</a>
     <a href="#edu_box">Education</a>
-    <a href="#">Skills</a>
+    <a href="#skill_box">Skills</a>
     <a href="#">Experience</a>
     <a href="#">Contact</a>
 </div>
@@ -26,7 +39,7 @@
     <div class="links">
         <div>
             <div class="tooltip">
-                <a href="mailto:name@email.com">
+                <a href="mailto:willbarouch@gmail.com">
                     <img class="links" src="gmlogo.png" alt="photo of me" width=47px>
                 </a>
                 <span class="tooltiptext"> willbarouch@gmail.com </span>
@@ -35,40 +48,60 @@
         <div >
             <div class="tooltip2">
                 <a href="https://github.com/WillBarouch">
-                <img class="gh" src="ghlogo.png" alt="photo of me" width=47px >
+                <img class="gh" src="Ghlogo.png" alt="photo of me" width=47px >
                 </a>
                 <span class="tooltiptext">willbarouch</span>
             </div>
         </div>
     </div>
 
+    <span id="scroll_message">Scroll Down</span>
+
     <div class="education" id="edu_box">
-    <span class="title-text" id="edu_top">Education</span>
-
-    <a href="https://www.reddamhouse.com.au/">
-        <span class="edu_top_text"  >- Reddam House High School</span>
-    </a>
-    <span class="main-text" >2021 - Present</span>
-
-    <a href="https://www.crimsonglobalacademy.school/au/">
-        <span class="edu_top_text"  >- Crimson Global Academy</span>
-    </a>
-    <span class="main-text" >2021 - Present</span>
-    <span class="main-text" >Biology GCSE</span>
-
-    <a href="https://www.reddamhouse.com.au/">
-        <span class="edu_top_text"  >- UNSW GERRIC</span>
-    </a>
-    <span class="main-text" >2020</span>
-    <span class="main-text" >Neuroanatomy</span>
+        <span class="title-text" id="edu_top">Education</span>
 
 
 
+            <a href="https://www.reddamhouse.com.au/">
+                <span class="edu_top_text"  >- Reddam House Primary/High School</span>
+            </a>
+            <span class="main-text" >2014 - Present</span>
+
+            <a href="https://www.crimsonglobalacademy.school/au/">
+                <span class="edu_top_text"  >- Crimson Global Academy</span>
+            </a>
+            <span class="main-text" >2021 - Present</span>
+            <span class="main-text" >Biology GCSE</span>
+            <span class="main-text" >AP Data Science</span>
+            <span class="main-text" >Java Basics</span>
+
+
+            <a href="https://www.reddamhouse.com.au/">
+                <span class="edu_top_text"  >- UNSW GERRIC</span>
+            </a>
+            <span class="main-text" >2020</span>
+            <span class="main-text" >Neuroanatomy Course</span>
+
+    </div>
+
+    <div class="skills" id="skill_box">
+        <span class="title-text" id="skill_top">Skills</span>
+
+        <span class="edu_top_text">- Project Management</span>
+        <span class="skill-top-text">- UI/UX Design</span>
+        <span class="skill-top-text">- Programming</span>
+        <span class="main-text">Experince using HTML/CSS for website development</span>
+        <span class="main-text">Experince using Python for data manipulation and visualisation</span>
+        <span class="main-text">Experince using Python for machine learning</span>
+        <span class="main-text">Experince using Java</span>
+        <span class="skill-top-text">- 3D Design</span>
 
 
 
 
     </div>
+
+
 
 </div>
 
