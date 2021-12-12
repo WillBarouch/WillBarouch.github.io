@@ -82,6 +82,26 @@ hr {
     margin-top: 70px;
 }
 
+.main-text {
+    text-decoration: none;
+    font-size: 25px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.title-text {
+    text-decoration: none;
+    font-size: 50px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 70px;
+}
+
 .logo {
     position: relative;
     margin-left: 10px;
@@ -163,4 +183,44 @@ hr {
 
 .tooltip2:hover .tooltiptext {
     visibility: visible;
+}
+
+#edu_top {
+    position: relative;
+    margin-top: 725px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #031b28;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dba858;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.edu_top_text {
+    text-decoration: none;
+    font-size: 25px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 75px;
+}
+
+a {
+    text-decoration: none;
 }
