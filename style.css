@@ -2,6 +2,11 @@ body {
     background-color: #f4f3ee;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 .navbar {
     height: 100%;
     width: 180px;
@@ -31,7 +36,7 @@ body {
 
 .main {
     margin-left: 180px;
-    padding: 0px 10px;
+    padding: 0 10px;
     background-colour: #000000;
 }
 
@@ -61,7 +66,7 @@ body {
 }
 
 hr {
-    border: .5px solid #bcb8b1;
+    border: 0.5px solid #bcb8b1;
 }
 
 .photo {
@@ -75,6 +80,26 @@ hr {
 .main-text-top {
     text-decoration: none;
     font-size: 25px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.main-text {
+    text-decoration: none;
+    font-size: 25px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.title-text {
+    text-decoration: none;
+    font-size: 50px;
     color: #031b28;
     display: block;
     font-family: 'Questrial', sans-serif;
@@ -97,6 +122,7 @@ hr {
 .links {
     display: flex;
     justify-content: center;
+    padding-right: 70px;
 
 }
 
@@ -107,9 +133,8 @@ hr {
 .gh {
     position: absolute;
     bottom: -63px;
-
-
 }
+
 
 .tooltip {
     position: relative;
@@ -117,7 +142,6 @@ hr {
     font-family: 'Questrial', sans-serif;
 }
 
-/* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 190px;
@@ -129,14 +153,11 @@ hr {
     font-family: 'Questrial', sans-serif;
     top: 100%;
     left: 50%;
-    margin-left: -95px; /* Use half of the width (120/2 = 60), to center the tooltip */
-
-    /* Position the tooltip text - see examples below! */
+    margin-left: -95px;
     position: absolute;
     z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
@@ -147,7 +168,6 @@ hr {
     font-family: 'Questrial', sans-serif;
 }
 
-/* Tooltip text */
 .tooltip2 .tooltiptext {
     visibility: hidden;
     width: 90px;
@@ -159,7 +179,8 @@ hr {
     font-family: 'Questrial', sans-serif;
     top: 100%;
     left: 50%;
-    margin-left: -45px;
+    margin-left: -13px;
+    margin-top: 56px;
     position: absolute;
     z-index: 1;
 }
@@ -167,4 +188,92 @@ hr {
 
 .tooltip2:hover .tooltiptext {
     visibility: visible;
+}
+
+#edu_top {
+    position: relative;
+    margin-top: 725px;
+}
+
+#skill_top {
+    position: relative;
+    margin-top: 200px;
+}
+
+#experience_top {
+    position: relative;
+    margin-top: 200px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #031b28;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dba858;
+}
+
+
+
+
+.edu_top_text {
+    text-decoration: none;
+    font-size: 25px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.contact_text {
+    text-decoration: none;
+    font-size: 25px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.skill-top-text {
+    text-decoration: none;
+    font-size: 25px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+#scroll_message {
+    text-decoration: none;
+    font-size: 35px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 250px;
+    animation: fadein 3s steps(1000, end);
+
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

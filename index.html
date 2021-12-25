@@ -4,38 +4,138 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Questrial&display=swap" rel="stylesheet">
+
 </head>
 
 <div class="navbar">
-    <img class="logo" src="main.png" alt="logo" width=100px>
-    <span id=name >William Barouch</span>
-    <hr>
-    <a href="#">About</a>
-    <a href="#">Education</a>
-    <a href="#">Skills</a>
-    <a href="#">Experience</a>
-    <a href="#">Contact</a>
+    <a class="align_left" href="#">
+        <img class="logo" src="main.png" alt="logo" width=100px>
+        <span id=name >William Barouch</span>
+    </a>
+
+    <div class="push_down">
+    <hr >
+    <a class="scroll" href="#">About</a>
+    <a class="scroll" href="#edu_box">Education</a>
+    <a class="scroll" href="#skill_box">Skills</a>
+    <a class="scroll" href="#experience_box">Experience</a>
+    <a class="scroll" href="#contact_box">Contact</a>
+    </div>
+
 </div>
 
 <div class="main">
     <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Circle_%28transparent%29.png" alt="photo of me" width=300px>
 
-    <span class="main-text-top">Hey, I'm Will!</span>
-    <span class="main-text-top">I'm currently a student, but have interests in coding, medicine and engineering!</span>
+    <span class="main-text-top">Hey, I'm Will.</span>
+    <span class="main-text-top">I'm currently a student in Sydney, Australia with interests in programing, medicine and computer-aided design.</span>
 
     <div class="links">
-        <div href="mailto:willbarouch@gmail.com">
-            <div class="tooltip" >
-                <img class="links"  src="gmlogo.png" alt="photo of me" width=47px>
-                <span class="tooltiptext">willbarouch@gmail.com</span>
+        <div>
+            <div class="tooltip">
+                <a href="mailto:willbarouch@gmail.com">
+                    <img class="links" src="gmlogo.png" alt="photo of me" width=47px>
+                </a>
+                <span class="tooltiptext"> willbarouch@gmail.com </span>
             </div>
         </div>
-        <div href="mailto:willbarouch@gmail.com">
+        <div >
             <div class="tooltip2">
-                <img class="links gh" src="ghlogo.png" alt="photo of me" width=47px>
+                <a href="https://github.com/WillBarouch">
+                <img class="gh" src="Ghlogo.png" alt="photo of me" width=47px >
+                </a>
                 <span class="tooltiptext">willbarouch</span>
             </div>
         </div>
+    </div>
+
+
+
+    <div class="education" id="edu_box">
+        <span class="title-text" id="edu_top">Education</span>
+
+
+
+            <a href="https://www.reddamhouse.com.au/">
+                <span class="edu_top_text"  >Reddam House, Woollahra</span>
+            </a>
+            <span class="main-text" >2014 - Present</span>
+            <span class="main-text"  >Grade 8 (US/AU) / Year 9 (UK)</span>
+
+            <a href="https://www.crimsonglobalacademy.school/au/">
+                <span class="edu_top_text"  >Crimson Global Academy</span>
+            </a>
+            <span class="main-text" >2021 - Present</span>
+            <span class="main-text" >Biology GCSE</span>
+            <span class="main-text" >AP Data Science</span>
+            <span class="main-text" >Java Basics</span>
+
+
+            <a href="https://www.unsw.edu.au/arts-design-architecture/our-schools/education/professional-learning/gerric-gifted-education">
+                <span class="edu_top_text"  >University of New South Wales Selective Gifted Program</span>
+            </a>
+            <span class="main-text" >2020</span>
+            <span class="main-text" >Neuroanatomy Course</span>
+
+        <a href="https://www.codecamp.com.au/">
+            <span class="edu_top_text"  >Code Camp</span>
+        </a>
+        <span class="main-text" >2015-2019</span>
+
+
+    </div>
+
+    <div class="skills" id="skill_box">
+        <span class="title-text" id="skill_top">Skills</span>
+
+
+
+        <span class="edu_top_text">Programming:</span>
+        <span class="main-text">HTML/CSS/JS for website development</span>
+        <span class="main-text">Python for data manipulation and visualisation</span>
+        <span class="main-text">Python for machine learning</span>
+        <span class="main-text">Java</span>
+        <span class="skill-top-text">UI/UX Design</span>
+        <span class="skill-top-text">3D Design</span>
+        <span class="skill-top-text">Project Management</span>
+
+
+
+
+    </div>
+
+    <div class="Experience" id="experience_box">
+        <span class="title-text" id="experience_top">Experience</span>
+
+        <span class="edu_top_text">Uber - Internship</span>
+        <span class="main-text">2021-2022</span>
+
+        <span class="skill-top-text">SingularityU Global Impact Challenge Finals - Judge</span>
+        <span class="main-text">2019</span>
+
+        <span class="skill-top-text">Code Camp - Teachers Assistant</span>
+        <span class="main-text">2018 - 2019</span>
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="Contact" id="contact_box">
+        <span class="title-text" id="experience_top">Contact</span>
+
+        <span class="edu_top_text">Mobile:</span>
+        <span class="main-text">+61 403 359 219</span>
+
+        <span class="contact_text">Email:</span>
+        <a href="mailto:willbarouch@gmail.com">
+        <span class="main-text">willbarouch@gmail.com</span>
+        </a>
+
     </div>
 
 </div>
