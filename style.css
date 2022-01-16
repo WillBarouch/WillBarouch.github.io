@@ -97,6 +97,28 @@ hr {
     margin-top: 15px;
 }
 
+.main-text-p {
+    text-decoration: none;
+    font-size: 25px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+.small-text {
+    text-decoration: none;
+    font-size: 15px;
+    color: #031b28;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+
 .title-text {
     text-decoration: none;
     font-size: 50px;
@@ -187,6 +209,61 @@ hr {
 
 
 .tooltip2:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip3 {
+    position: relative;
+    display: inline-block;
+    font-family: 'Questrial', sans-serif;
+}
+
+.tooltip3 .tooltiptext {
+    visibility: hidden;
+    width: 70px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-family: 'Questrial', sans-serif;
+    top: 100%;
+    left: 50%;
+    margin-left: -35px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.tooltip3:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip4 {
+    position: relative;
+    display: inline-block;
+    font-family: 'Questrial', sans-serif;
+}
+
+.tooltip4 .tooltiptext {
+    visibility: hidden;
+    width: 90px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-family: 'Questrial', sans-serif;
+    top: 100%;
+    left: 50%;
+    margin-left: -13px;
+    margin-top: 56px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.tooltip4:hover .tooltiptext {
     visibility: visible;
 }
 
