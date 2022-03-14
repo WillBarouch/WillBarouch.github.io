@@ -28,7 +28,7 @@ html {
     font-size: 25px;
     color: var(--nord0);
     display: block;
-    font-family: Rubik;;
+    font-family: Rubik;
 }
 
 
@@ -127,7 +127,7 @@ hr {
     font-size: 50px;
     color: #031b28;
     display: block;
-    font-family: 'Inter', sans-serif;
+    font-family: Rubik;
     text-align: center;
     margin-top: 70px;
 }
