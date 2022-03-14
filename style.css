@@ -1,5 +1,8 @@
+@import "/nord/nord.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik&display=swap');
+
 body {
-    background-color: #f4f3ee;
+    background-color: var(--nord6);
 }
 
 html {
@@ -14,7 +17,7 @@ html {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #031b28;
+    background-color: var(--nord6);
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -23,14 +26,14 @@ html {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #bcb8b1;
+    color: var(--nord0);
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: Rubik;;
 }
 
 
 .navbar a:hover {
-    color: #dba858;
+    color: var(--nord10);
 }
 
 
@@ -50,9 +53,9 @@ html {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 30px;
-    color: #bcb8b1;
+    color: var(--nord0);
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: Rubik;
     text-align: left;
 }
 
@@ -66,7 +69,7 @@ html {
 }
 
 hr {
-    border: 0.5px solid #bcb8b1;
+    border: 0.5px solid var(--nord0);
 }
 
 .photo {
@@ -82,7 +85,7 @@ hr {
     font-size: 25px;
     color: #031b28;
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     margin-top: 70px;
 }
@@ -92,7 +95,7 @@ hr {
     font-size: 25px;
     color: #031b28;
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     margin-top: 15px;
 }
@@ -102,7 +105,7 @@ hr {
     font-size: 25px;
     color: #031b28;
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     margin-top: 15px;
     padding-left: 350px;
@@ -114,7 +117,7 @@ hr {
     font-size: 15px;
     color: #031b28;
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     margin-top: 15px;
 }
@@ -124,7 +127,7 @@ hr {
     font-size: 50px;
     color: #031b28;
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     margin-top: 70px;
 }
@@ -161,7 +164,7 @@ hr {
 .tooltip {
     position: relative;
     display: inline-block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .tooltip .tooltiptext {
@@ -172,7 +175,7 @@ hr {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     top: 100%;
     left: 50%;
     margin-left: -95px;
@@ -187,7 +190,7 @@ hr {
 .tooltip2 {
     position: relative;
     display: inline-block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .tooltip2 .tooltiptext {
@@ -198,7 +201,7 @@ hr {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     top: 100%;
     left: 50%;
     margin-left: -13px;
@@ -215,7 +218,7 @@ hr {
 .tooltip3 {
     position: relative;
     display: inline-block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .tooltip3 .tooltiptext {
@@ -226,7 +229,7 @@ hr {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     top: 100%;
     left: 50%;
     margin-left: -35px;
@@ -242,7 +245,7 @@ hr {
 .tooltip4 {
     position: relative;
     display: inline-block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .tooltip4 .tooltiptext {
@@ -253,7 +256,7 @@ hr {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     top: 100%;
     left: 50%;
     margin-left: -13px;
@@ -287,15 +290,15 @@ hr {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--nord4);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #031b28;
+    background: var(--nord0);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #dba858;
+    background: var(--nord3);
 }
 
 
@@ -304,9 +307,9 @@ hr {
 .edu_top_text {
     text-decoration: none;
     font-size: 25px;
-    color: #031b28;
+    color: var(--nord0);
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     margin-top: 75px;
 }
@@ -314,9 +317,9 @@ hr {
 .contact_text {
     text-decoration: none;
     font-size: 25px;
-    color: #031b28;
+    color: var(--nord0);
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     margin-top: 25px;
 }
@@ -328,9 +331,9 @@ a {
 .skill-top-text {
     text-decoration: none;
     font-size: 25px;
-    color: #031b28;
+    color: var(--nord0);
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     margin-top: 30px;
 }
@@ -342,7 +345,7 @@ a {
     font-size: 35px;
     color: #031b28;
     display: block;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     margin-top: 250px;
     animation: fadein 3s steps(1000, end);
