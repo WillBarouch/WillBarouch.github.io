@@ -8,6 +8,8 @@ root{
 
 body {
     background-color: var(--body);
+    padding:0;
+    margin: 0;
 }
 
 #togglemode {
@@ -45,6 +47,11 @@ html {
 
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .navbar {
     height: 100%;
     width: 180px;
@@ -73,8 +80,10 @@ html {
 
 
 .main {
+    position: relative;
     overflow: hidden;
-    padding: 0 10px;
+    width: 100%;
+    display:inline-block
 }
 
 
@@ -145,6 +154,8 @@ hr {
     padding-left: 350px;
     padding-right: 350px;
 }
+
+
 
 .small-text {
     text-decoration: none;
