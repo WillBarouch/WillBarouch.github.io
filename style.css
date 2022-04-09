@@ -1,16 +1,16 @@
-@import "/nord/nord.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik&display=swap');
 
 root{
-    --body: var(--nord6);
+    --body: #eceff4;
     --cont: var(--nord0);
+    --contless: var(--nord4);
 }
 
 body {
     background-color: var(--body);
 }
 
-#dmtg {
+#togglemode {
     height: 50px;
     width: 50px;
     border-radius: 25px;
@@ -19,6 +19,24 @@ body {
     position:fixed;
     top:90vh;
     left:90vw;
+}
+
+#visual {
+    position: absolute;
+    width: 150vw;
+    right: .01vw;
+    top: 70vh;
+    z-index: -1;
+    animation-name: sine;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sine {
+    0%   { left:-10vw;}
+    50%  { left:0vw;}
+    100%   { left:-10vw;}
 }
 
 html {
@@ -42,7 +60,7 @@ html {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: var(--cont);
+    color: var(--nord10);
     display: block;
     font-family: Rubik;
 }
@@ -292,6 +310,8 @@ hr {
 .tooltip4:hover .tooltiptext {
     visibility: visible;
 }
+
+
 
 #edu_top {
     position: relative;
