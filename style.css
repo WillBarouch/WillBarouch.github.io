@@ -1,8 +1,23 @@
 @import "/nord/nord.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik&display=swap');
 
+root{
+    --body: var(--nord6)
+}
+
 body {
-    background-color: var(--nord6);
+    background-color: var(--body);
+}
+
+#dmtg {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--nord1);
+    position:fixed;
+    top:90vh;
+    left:90vw;
 }
 
 html {
