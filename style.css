@@ -22,6 +22,7 @@ body {
 }
 
 #visual {
+    fill: var(--contless);
     position: absolute;
     width: 150vw;
     right: .01vw;
@@ -72,9 +73,8 @@ html {
 
 
 .main {
-
+    overflow: hidden;
     padding: 0 10px;
-    background-colour: #000000;
 }
 
 
@@ -192,13 +192,13 @@ hr {
 .gh {
     position: absolute;
     bottom: -48px;
-    margin-left: 1vw;
+    margin-left: 30px;
 }
 
 .gm {
     position: absolute;
     bottom: -48px;
-    margin-right: vw;
+    margin-left: -20px;
 }
 
 
