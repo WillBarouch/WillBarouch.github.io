@@ -12,7 +12,24 @@ body {
     margin: 0;
 }
 
-#togglemode {
+.togglemode svg{
+    fill: var(--contless);
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    right: 5px ;
+    bottom: 5px;
+}
+
+#Moon {
+    visibility: visible;
+}
+
+#Sun {
+    visibility: hidden;
+}
+
+.togglemode {
     height: 50px;
     width: 50px;
     border-radius: 25px;
