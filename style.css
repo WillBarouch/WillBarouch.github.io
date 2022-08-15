@@ -45,7 +45,7 @@ body {
     position: absolute;
     width: 150vw;
     right: .01vw;
-    top: 70vh;
+    top: 80vh;
     z-index: -1;
     animation-name: sine;
     animation-duration: 6s;
@@ -189,9 +189,9 @@ hr {
     font-size: 50px;
     color: var(--cont);
     display: block;
-    font-family: Rubik;
+    font-family: Rubik, sans-serif;
     text-align: center;
-    margin-top: 70px;
+    margin-top: ;
 }
 
 .logo {
@@ -343,7 +343,7 @@ hr {
 
 #edu_top {
     position: relative;
-    margin-top: 725px;
+    margin-top: 25vh;
 }
 
 #skill_top {
@@ -428,3 +428,14 @@ a {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+.footer {
+    width: 100vw;
+    height: 15vh;
+    background-color:var(--body);
+    z-index: 100;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+
