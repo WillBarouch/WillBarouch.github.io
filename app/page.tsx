@@ -1,7 +1,6 @@
- /* eslint react/no-unescaped-entities */
-
 import Image from 'next/image'
 import Profile from "./img/profile.png"
+import { IconContext } from "react-icons";
 import { FaGithub } from "react-icons/fa";
 import { ImMail4 } from "react-icons/im";
 import {BiLogoFigma} from "react-icons/bi";
