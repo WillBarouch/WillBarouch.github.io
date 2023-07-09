@@ -11,7 +11,7 @@ const IconTooltip = ({ icon: IconComponent, tooltipText }) => (
   <TooltipProvider delayDuration={100}>
     <Tooltip>
       <TooltipTrigger>
-        <div className="m-2 w-10">
+        <div className="m-2 w-12">
           <IconComponent className="w-full h-full" />
         </div>
       </TooltipTrigger>
