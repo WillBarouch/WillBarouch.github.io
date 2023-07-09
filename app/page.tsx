@@ -31,10 +31,10 @@ export default function Home() {
         <Image src={Profile} alt={"A photo of me!"} fill></Image>
     </div>
     <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mt-5" >
-        Hi I'm <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Will Barouch</span>
+        Hi I&apos;m <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Will Barouch</span>
     </h1>
     <h2 className="scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
-        I'm a student in Sydney, Australia with interests in programing, medicine and computer-aided design.
+        I&apos;m a student in Sydney, Australia with interests in programing, medicine and computer-aided design.
     </h2>
     <div className="flex flex-row items-center justify-center mt-16">
         <div className="w-24 mx-5">
