@@ -1,40 +1,40 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ["class"],
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+	],
   theme: {
     fontFamily: {
       header: ["Rubik", "sans-serif"],
       body: ["Inter", "sans-serif"],
     },
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
       },
-       colors: theme => ({
-        'nord0': '#2E3440',
-        'nord1': '#3B4252',
-        'nord2': '#434C5E',
-        'nord3': '#4C566A',
-        'nord4': '#D8DEE9',
-        'nord5': '#E5E9F0',
-        'nord6': '#ECEFF4',
-        'nord7': '#8FBCBB',
-        'nord8': '#88C0D0',
-        'nord9': '#81A1C1',
-        'nord10': '#5E81AC',
-        'nord11': '#BF616A',
-        'nord12': '#D08770',
-        'nord13': '#EBCB8B',
-        'nord14': '#A3BE8C',
-        'nord15': '#B48EAD',
-      }),
+    },
+    extend: {
+      keyframes: {
+        "accordion-down": {
+          from: { height: 0 },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: 0 },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 }
