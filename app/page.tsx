@@ -1,3 +1,5 @@
+ /* eslint react/no-unescaped-entities */
+
 import Image from 'next/image'
 import Profile from "./img/profile.png"
 import { FaGithub } from "react-icons/fa";
