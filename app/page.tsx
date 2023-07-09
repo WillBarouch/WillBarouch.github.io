@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Profile from "./img/profile.png"
+import IconTooltip from "@/components/ui/IconTooltip";
+import ScrollDownIndicator from "@/components/ui/ScrollDownIndicator";
 import { FaGithub } from "react-icons/fa";
 import { ImMail4 } from "react-icons/im";
 import {BiLogoFigma} from "react-icons/bi";
@@ -27,7 +29,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24 bg-black text-white">
     <div className="w-1/3 aspect-square relative">
-        <Image src={Profile} alt={"A photo of me!"} fill></Image>
+        <Image src={Profile} alt={"A photo of me!"} fill className={"aspect-square"}></Image>
     </div>
     <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mt-5" >
         Hi I&apos;m <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Will Barouch</span>
@@ -64,7 +66,7 @@ export default function Home() {
             Education
         </h2>
         <div className="flex flex-auto w-full flex-wrap justify-center">
-            <Card className="m-4 w-72">
+            <Card className="w-72">
                 <CardHeader >
                     <CardTitle>Reddam House</CardTitle>
                 </CardHeader>
@@ -73,7 +75,7 @@ export default function Home() {
                     <p>Grade 9</p>
                 </CardContent>
             </Card>
-            <Card className="m-4 w-72">
+            <Card className="w-72">
                 <CardHeader >
                     <CardTitle>Crimson Global Academy</CardTitle>
                 </CardHeader>
@@ -84,7 +86,7 @@ export default function Home() {
                     <p> AP Data Science</p>
                 </CardContent>
             </Card>
-           <Card className="m-4 w-72">
+           <Card className="w-72">
                 <CardHeader >
                     <CardTitle>University of New South Wales Selective Gifted Program</CardTitle>
                 </CardHeader>
@@ -101,60 +103,62 @@ export default function Home() {
             Skills
         </h2>
         <div className="flex flex-auto w-full flex-wrap justify-center">
-            <Card className="m-4 w-64">
-                <CardHeader >
-                    <CardTitle>UI/UX design</CardTitle>
-                </CardHeader>
-                <CardFooter>
-                    <div className="flex flex-auto w-full flex-wrap mx-auto items-center justify-center">
-                        <SiAdobephotoshop className="m-2" size="20%"/>
-                        <SiAdobeillustrator className="m-2" size="20%"/>
-                        <BiLogoFigma className="m-2" size="20%"/>
-                    </div>
-                </CardFooter>
-            </Card>
 
-            <Card className="m-4 w-64">
-                <CardHeader >
-                    <CardTitle>Web Development</CardTitle>
-                </CardHeader>
-                <CardFooter>
-                    <div className="flex flex-auto w-full flex-wrap mx-auto items-center justify-center">
-                        <FaReact className="m-2" size="20%"/>
-                        <SiCss3 className="m-2" size="20%"/>
-                        <SiHtml5 className="m-2" size="20%"/>
-                        <SiTypescript className="m-2" size="20%"/>
-                        <SiTailwindcss className="m-2" size="20%"/>
-                        <SiNextdotjs className="m-2" size="20%"/>
-                    </div>
-                </CardFooter>
-            </Card>
+        <Card className="w-64">
+          <CardHeader>
+            <CardTitle>UI/UX design</CardTitle>
+          </CardHeader>
+          <CardFooter>
+            <div className="flex flex-auto w-full flex-wrap mx-auto items-center justify-center">
+              <IconTooltip icon={SiAdobephotoshop} tooltipText="Adobe Photoshop" />
+              <IconTooltip icon={SiAdobeillustrator} tooltipText="Adobe Illustrator" />
+              <IconTooltip icon={BiLogoFigma} tooltipText="Figma" />
+            </div>
+          </CardFooter>
+        </Card>
 
-            <Card className="m-4 w-64">
-                <CardHeader >
-                    <CardTitle>ML & Data Science</CardTitle>
-                </CardHeader>
-                <CardFooter>
-                    <div className="flex flex-auto w-full flex-wrap mx-auto items-center justify-center">
-                        <FaPython className="m-2" size="20%"/>
-                        <SiScikitlearn className="m-2" size="20%"/>
-                        <SiPandas className="m-2" size="20%"/>
-                    </div>
-                </CardFooter>
-            </Card>
+        <Card className="w-64">
+          <CardHeader>
+            <CardTitle>Web Development</CardTitle>
+          </CardHeader>
+          <CardFooter className=" self-center">
+            <div className="flex flex-auto w-full flex-wrap m-auto items-center justify-center">
+              <IconTooltip icon={SiTypescript} tooltipText="TypeScript" />
+              <IconTooltip icon={SiCss3} tooltipText="CSS3" />
+              <IconTooltip icon={SiHtml5} tooltipText="HTML5" />
+              <IconTooltip icon={FaReact} tooltipText="React" />
+              <IconTooltip icon={SiTailwindcss} tooltipText="Tailwind CSS" />
+              <IconTooltip icon={SiNextdotjs} tooltipText="Next.js" />
+            </div>
+          </CardFooter>
+        </Card>
 
-            <Card className="m-4 w-64">
-                <CardHeader >
-                    <CardTitle>3D Design & Rendering</CardTitle>
-                </CardHeader>
-                <CardFooter>
-                    <div className="flex flex-auto w-full flex-wrap mx-auto items-center justify-center">
-                        <SiBlender className="m-2" size="20%"/>
-                        <SiAdobeaftereffects className="m-2" size="20%"/>
-                        <SiAdobepremierepro className="m-2" size="20%"/>
-                    </div>
-                </CardFooter>
-            </Card>
+        <Card className="w-64">
+          <CardHeader>
+            <CardTitle>ML & Data Science</CardTitle>
+          </CardHeader>
+          <CardFooter>
+            <div className="flex flex-auto w-full flex-wrap mx-auto items-center justify-center">
+              <IconTooltip icon={FaPython} tooltipText="Python" />
+              <IconTooltip icon={SiScikitlearn} tooltipText="Scikit-learn" />
+              <IconTooltip icon={SiPandas} tooltipText="Pandas" />
+            </div>
+          </CardFooter>
+        </Card>
+
+        <Card className="w-64">
+          <CardHeader>
+            <CardTitle>3D Design & Rendering</CardTitle>
+          </CardHeader>
+          <CardFooter>
+            <div className="flex flex-auto w-full flex-wrap mx-auto items-center justify-center">
+              <IconTooltip icon={SiBlender} tooltipText="Blender" />
+              <IconTooltip icon={SiAdobeaftereffects} tooltipText="Adobe After Effects" />
+              <IconTooltip icon={SiAdobepremierepro} tooltipText="Adobe Premiere Pro" />
+            </div>
+          </CardFooter>
+        </Card>
+
 
         </div>
     </section>
@@ -164,7 +168,7 @@ export default function Home() {
             Experience
         </h2>
         <div className="flex flex-auto w-full flex-wrap justify-center">
-            <Card className="m-4 w-72">
+            <Card className="w-72">
                 <CardHeader >
                     <CardTitle>Uber</CardTitle>
                     <CardDescription>Internship</CardDescription>
@@ -176,7 +180,7 @@ export default function Home() {
                 </CardContent>
             </Card>
 
-            <Card className="m-4 w-72">
+            <Card className="w-72">
                 <CardHeader >
                     <CardTitle>SingularityU Global Impact Challenge Finals</CardTitle>
                     <CardDescription>Judge</CardDescription>
@@ -186,7 +190,7 @@ export default function Home() {
                 </CardContent>
             </Card>
 
-            <Card className="m-4 w-72">
+            <Card className="w-72">
                 <CardHeader >
                     <CardTitle>Code Camp</CardTitle>
                     <CardDescription>Teachers Assistant</CardDescription>
@@ -198,6 +202,15 @@ export default function Home() {
         </div>
     </section>
 
+    <section className="mt-28 p-8 text-center">
+        <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+            Contact
+        </h2>
+        <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors mt-5">Mobile: +61 403 359 219</h3>
+        <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors">Email: <a href="mailto:willbarouch@gmail.com" className="underline"> willbarouch@gmail.com </a></h3>
+    </section>
+
+  <ScrollDownIndicator />
 
     </main>
   )
