@@ -32,9 +32,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Link from 'next/link';
 
 
-export default function Home() {
+export default function Index() {
     return (
     <main className="flex min-h-screen flex-col items-center p-24 bg-black text-white">
 
@@ -190,6 +191,7 @@ export default function Home() {
         <Card>
           <CardHeader>
             <CardTitle>3D Design & Rendering</CardTitle>
+              <CardDescription><Link href="/portfolio" className="underline bold">My portfolio</Link></CardDescription>
           </CardHeader>
           <CardFooter>
             <div className="flex flex-auto w-full flex-wrap mx-auto items-center justify-center">
@@ -216,8 +218,8 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                     <p>2021 - 2022</p>
-                    <p className="mx-auto underline"><a href="./files/Crimson%20Careers%20Program%20Certificates%20(5).pdf">Certificate Of Completion</a></p>
-                    <p className="mx-auto underline"><a href="./files/Willaim%20Barouch%20Uber%20Letter%20of%20Reference%20.pdf">Letter Of Reccomendation</a></p>
+                    <p className="mx-auto underline"><a href="../files/Crimson%20Careers%20Program%20Certificates%20(5).pdf">Certificate Of Completion</a></p>
+                    <p className="mx-auto underline"><a href="../files/Willaim%20Barouch%20Uber%20Letter%20of%20Reference%20.pdf">Letter Of Reccomendation</a></p>
                 </CardContent>
             </Card>
 
