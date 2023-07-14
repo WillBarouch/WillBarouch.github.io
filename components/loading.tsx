@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Skeleton} from "@/components/ui/skeleton";
+import Image from 'next/image';
 
 interface LoadingProps {
   src: string;
@@ -19,7 +20,7 @@ const Loading: React.FC<LoadingProps> = ({ src, alt }) => {
         <Skeleton className="absolute inset-0 flex items-center justify-center">
         </Skeleton>
       )}
-      <img
+      <Image
         src={src}
         alt={alt}
         onLoad={handleImageLoad}
