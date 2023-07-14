@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3c9c460a-e3dc-47c9-beee-a317726df169" name="Changes" comment="fix layout, add new skills">
+      <change afterPath="$PROJECT_DIR$/app/img/drive-download-20230710T005929Z-001.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/renders/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/portfolio/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/portfolio/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/skeleton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/portfolio/portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="next" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23zEkGvXAG0ypbSrIdJPn184K7S" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;next&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Willb\\Documents\\GitHub\\WillBarouch.github.io\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Willb\Documents\GitHub\WillBarouch.github.io\app\img" />
+      <recent name="C:\Users\Willb\Documents\GitHub\WillBarouch.github.io\app\portfolio" />
+      <recent name="C:\Users\Willb\Documents\GitHub\WillBarouch.github.io\app" />
+      <recent name="C:\Users\Willb\Documents\GitHub\WillBarouch.github.io\app\pages\portfolio" />
+      <recent name="C:\Users\Willb\Documents\GitHub\WillBarouch.github.io\app\pages" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="http-client &lt;request&gt;" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c9c460a-e3dc-47c9-beee-a317726df169" name="Changes" comment="" />
+      <created>1642728658213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642728658213</updated>
+      <workItem from="1642728660934" duration="838000" />
+      <workItem from="1643692024706" duration="40000" />
+      <workItem from="1644222228783" duration="877000" />
+      <workItem from="1644741353464" duration="25000" />
+      <workItem from="1644743106913" duration="69000" />
+      <workItem from="1645502667375" duration="455000" />
+      <workItem from="1647251451043" duration="1979000" />
+      <workItem from="1647473415023" duration="47000" />
+      <workItem from="1649492106528" duration="4708000" />
+      <workItem from="1649505127213" duration="1039000" />
+      <workItem from="1649562997148" duration="206000" />
+      <workItem from="1649563885364" duration="614000" />
+      <workItem from="1660477150789" duration="835000" />
+      <workItem from="1660545184811" duration="1562000" />
+      <workItem from="1661851269313" duration="47000" />
+      <workItem from="1661851466502" duration="2469000" />
+      <workItem from="1665027078563" duration="615000" />
+      <workItem from="1688876354373" duration="8817000" />
+      <workItem from="1688885564468" duration="10175000" />
+      <workItem from="1688901003189" duration="1321000" />
+      <workItem from="1688950503931" duration="2140000" />
+      <workItem from="1689245179498" duration="70000" />
+      <workItem from="1689245279771" duration="6485000" />
+    </task>
+    <task id="LOCAL-00001" summary="convert to typescript">
+      <created>1661854171395</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661854171395</updated>
+    </task>
+    <task id="LOCAL-00002" summary="convert to typescript">
+      <created>1688876875233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688876875233</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init to next.js">
+      <created>1688877047618</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688877047618</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add content">
+      <created>1688883822665</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688883822665</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add content">
+      <created>1688883950647</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688883950647</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix eslint">
+      <created>1688884250810</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688884250810</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix eslint">
+      <created>1688884568908</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688884568908</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix eslint">
+      <created>1688884683262</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688884683262</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix escaping &amp;apos;">
+      <created>1688885862812</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688885862812</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix escaping &amp;apos;">
+      <created>1688885931382</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688885931382</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add analytics">
+      <created>1688886216373</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688886216373</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add contact, split into components">
+      <created>1688893932320</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688893932320</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix layout, add new skills">
+      <created>1688898383719</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688898383719</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="convert to typescript" />
+    <MESSAGE value="init to next.js" />
+    <MESSAGE value="add content" />
+    <MESSAGE value="fix eslint" />
+    <MESSAGE value="fix escaping &amp;apos;" />
+    <MESSAGE value="add analytics" />
+    <MESSAGE value="add contact, split into components" />
+    <MESSAGE value="fix layout, add new skills" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix layout, add new skills" />
+  </component>
+</project>
