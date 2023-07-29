@@ -7,17 +7,17 @@ import Link from 'next/link';
 import Loading from '@/components/loading';
 
 const images: string[] = [];
-for (let i = 1; i < 22; i++) {
+for (let i = 1; i < 23; i++) {
   const image = `/portfolio/renders/${i}.png`;
   images.push(image);
 }
 
 export default function Portfolio() {
   const breakpointColumnsObj = {
-    default: 3,
-    1100: 3,
-    700: 2,
-    500: 1,
+    default: 4,
+    1500: 3,
+    850: 2,
+    450: 1,
   };
 
   return (
@@ -36,7 +36,7 @@ export default function Portfolio() {
         columnClassName="my-masonry-grid_column"
       >
         {images.map((image, index) => (
-          <div key={`img-${index}`}>
+          <div key={`img-${index}`} className={""}>
             <Loading src={image} alt={`art ${index}`} />
           </div>
         ))}
