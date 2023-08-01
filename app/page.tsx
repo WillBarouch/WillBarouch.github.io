@@ -36,6 +36,7 @@ import {
 import Link from 'next/link';
 import Header from '@/components/ui/Header';
 import Nav from '@/components/ui/Nav';
+import Section from '@/components/ui/Section';
 
 
 export default function Index() {
@@ -45,7 +46,7 @@ export default function Index() {
 
     <Nav />
 
-    <section className={"h-screen pt-96"} id="Landing">
+    <section className={"h-screen pt-[25vh]"} id="landing">
 
     <Header />
     <h2 className="scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors mt-28 justify-around">
@@ -76,16 +77,8 @@ export default function Index() {
     </div>
     </section>
 
-    <motion.section
-  className="p-8 text-center w-full"
-  id="Education"
-  initial={{ marginRight: "100vw" }}
-  whileInView={{ marginRight: 0 }}
-  transition={{ duration: 1}} // Increase the duration to slow down the animation
->
-        <h2 className={`scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl`}>
-            Education
-        </h2>
+
+    <Section id="Education">
         <div className="flex flex-auto w-full flex-wrap justify-center">
             <Card>
                 <CardHeader >
@@ -121,14 +114,9 @@ export default function Index() {
                 </CardContent>
             </Card>
         </div>
-    </motion.section>
+    </Section>
 
-    <motion.section className="mt-28 p-8 text-center" id="Skills">
-        <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Skills
-        </h2>
-        <div className="flex flex-auto w-full mx-auto lg:w-[95%] xl:w-[92%] 2xl:w-[60%] flex-wrap justify-center">
-
+    <Section id={"Skills"}>
         <Card>
           <CardHeader>
             <CardTitle>UI/UX design</CardTitle>
@@ -212,15 +200,9 @@ export default function Index() {
             </div>
           </CardFooter>
         </Card>
+    </Section>
 
-
-        </div>
-    </motion.section>
-
-    <section className="mt-28 p-8 text-center" id="Experience">
-        <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Experience
-        </h2>
+    <Section id="Experience">
         <div className="flex flex-auto w-full flex-wrap justify-center">
             <Card>
                 <CardHeader >
@@ -254,18 +236,13 @@ export default function Index() {
                 </CardContent>
             </Card>
         </div>
-    </section>
+    </Section>
 
-    <section className="mt-28 p-8 text-center" id="Contact">
-        <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Contact
-        </h2>
+    <Section id="Contact">
         <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors mt-5">Mobile: +61 403 359 219</h3>
         <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors">Email: <a href="mailto:willbarouch@gmail.com" className="underline"> willbarouch@gmail.com </a></h3>
-    </section>
-
+    </Section>
   <ScrollDownIndicator />
-
-    </main>
+</main>
   )
 }
