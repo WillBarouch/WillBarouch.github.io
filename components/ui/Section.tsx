@@ -11,7 +11,7 @@ interface props  {
 export default function Section({ children, id }:props) {
 
     const ref = useRef(null)
-    const isInView = useInView(ref, {once: true})
+    const isInView = useInView(ref, {once: true, margin: " 0px 0px 50px 0px"});
 
     const mainControls = useAnimation();
     const slideControls = useAnimation();
@@ -21,7 +21,7 @@ export default function Section({ children, id }:props) {
             mainControls.start("visible");
             slideControls.start("visible");
         }
-    }), [isInView]);
+    }), [isInView, mainControls, slideControls]);
 
     return(
         <motion.section
@@ -34,13 +34,13 @@ export default function Section({ children, id }:props) {
           initial="hidden"
           animate={mainControls}
           ref={ref}
-          transition={{duration:1, delay: 0.25}}
+          transition={{duration:1, delay: 0.5}}
         >
             <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
                 {id}
             </h2>
 
-            <div className="flex flex-auto w-full mx-auto lg:w-[95%] xl:w-[92%] 2xl:w-[50%] flex-wrap justify-center text-center">
+            <div className="flex flex-auto w-full mx-auto lg:w-[95%] xl:w-[92%] 2xl:w-[80%] flex-wrap justify-center text-center">
                 {children}
             </div>
             <motion.div
