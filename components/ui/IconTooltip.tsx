@@ -9,10 +9,18 @@ import {motion} from "framer-motion";
 
 // @ts-ignore
 const IconTooltip = ({ icon: IconComponent, tooltipText }) => (
-    <motion.div className="m-2 w-12" initial={{marginBottom: "0px"}} whileHover={{marginBottom: "2rem"}}>
-      <IconComponent className="w-full h-full" />
-      <p>{tooltipText}</p>
-    </motion.div>
+  <TooltipProvider delayDuration={100}>
+    <Tooltip>
+      <TooltipTrigger>
+        <div className="m-2 w-12">
+          <IconComponent className="w-full h-full" />
+        </div>
+      </TooltipTrigger>
+      <TooltipContent side="bottom">
+        <p>{tooltipText}</p>
+      </TooltipContent>
+    </Tooltip>
+  </TooltipProvider>
 );
 
 export default IconTooltip;
