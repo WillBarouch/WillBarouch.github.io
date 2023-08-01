@@ -42,7 +42,7 @@ import Section from '@/components/ui/Section';
 export default function Index() {
 
     return (
-    <main className="flex min-h-screen flex-col items-center px-12 sm:px-24 bg-zinc-950 text-white text-left">
+    <main className="flex min-h-screen flex-col items-center px-12 sm:px-24 bg-zinc-900 text-white text-left">
 
     <Nav />
 
@@ -239,8 +239,10 @@ export default function Index() {
     </Section>
 
     <Section id="Contact">
-        <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors mt-5">Mobile: +61 403 359 219</h3>
-        <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors">Email: <a href="mailto:willbarouch@gmail.com" className="underline"> willbarouch@gmail.com </a></h3>
+        <div className={"inline"}>
+            <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors mt-5">Mobile: +61 403 359 219</h3>
+            <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors">Email: <a href="mailto:willbarouch@gmail.com" className="underline"> willbarouch@gmail.com </a></h3>
+        </div>
     </Section>
   <ScrollDownIndicator />
 </main>

@@ -8,7 +8,7 @@ const Header = () => {
 
   const letterVariants = {
     hidden: { opacity: 0},
-    visible: (i) => ({
+    visible: (i:any) => ({
       opacity: 1,
       transition: {
         delay: i * 0.1,
