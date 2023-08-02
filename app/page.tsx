@@ -1,6 +1,5 @@
-'use client';
 import Image from 'next/image'
-import { motion, useScroll} from "framer-motion"
+import Profile from "./img/profile.png"
 import IconTooltip from "@/components/ui/IconTooltip";
 import ScrollDownIndicator from "@/components/ui/ScrollDownIndicator";
 import { FaGithub } from "react-icons/fa";
@@ -34,22 +33,18 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import Link from 'next/link';
-import Header from '@/components/ui/Header';
-import Nav from '@/components/ui/Nav';
-import Section from '@/components/ui/Section';
 
 
 export default function Index() {
-
     return (
-    <main className="flex min-h-screen flex-col items-center px-12 sm:px-24 bg-zinc-900 text-white text-left">
+    <main className="flex min-h-screen flex-col items-center p-12 sm:p-24 bg-black text-white text-center">
 
-    <Nav />
+    <Image src={Profile} alt={"A photo of me!"} className={"w-72 relative"}></Image>
 
-    <section className={"h-screen pt-[25vh]"} id="landing">
-
-    <Header />
-    <h2 className="scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors mt-28 justify-around">
+    <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mt-5" >
+        Hi I&apos;m <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Will Barouch</span>
+    </h1>
+    <h2 className="scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0 justify-around">
         I&apos;m a student in Sydney, Australia with interests in programing, medicine and computer-aided design.
     </h2>
     <div className="flex flex-row items-center justify-center mt-16">
@@ -75,10 +70,11 @@ export default function Index() {
             </TooltipProvider>
         </div>
     </div>
-    </section>
 
-
-    <Section id="Education">
+    <section className="mt-28 p-8 text-center">
+        <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+            Education
+        </h2>
         <div className="flex flex-auto w-full flex-wrap justify-center">
             <Card>
                 <CardHeader >
@@ -114,9 +110,14 @@ export default function Index() {
                 </CardContent>
             </Card>
         </div>
-    </Section>
+    </section>
 
-    <Section id={"Skills"}>
+    <section className="mt-28 p-8 text-center">
+        <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+            Skills
+        </h2>
+        <div className="flex flex-auto w-full mx-auto lg:w-[95%] xl:w-[92%] 2xl:w-[60%] flex-wrap justify-center">
+
         <Card>
           <CardHeader>
             <CardTitle>UI/UX design</CardTitle>
@@ -200,9 +201,15 @@ export default function Index() {
             </div>
           </CardFooter>
         </Card>
-    </Section>
 
-    <Section id="Experience">
+
+        </div>
+    </section>
+
+    <section className="mt-28 p-8 text-center">
+        <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+            Experience
+        </h2>
         <div className="flex flex-auto w-full flex-wrap justify-center">
             <Card>
                 <CardHeader >
@@ -236,15 +243,18 @@ export default function Index() {
                 </CardContent>
             </Card>
         </div>
-    </Section>
+    </section>
 
-    <Section id="Contact">
-        <div className={"inline"}>
-            <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors mt-5">Mobile: +61 403 359 219</h3>
-            <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors">Email: <a href="mailto:willbarouch@gmail.com" className="underline"> willbarouch@gmail.com </a></h3>
-        </div>
-    </Section>
+    <section className="mt-28 p-8 text-center">
+        <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+            Contact
+        </h2>
+        <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors mt-5">Mobile: +61 403 359 219</h3>
+        <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors">Email: <a href="mailto:me@willbarouch.com" className="underline"> me@willbarouch.com </a></h3>
+    </section>
+
   <ScrollDownIndicator />
-</main>
+
+    </main>
   )
 }
