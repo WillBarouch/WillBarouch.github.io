@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c9c460a-e3dc-47c9-beee-a317726df169" name="Changes" comment="Refactor section to component">
+    <list default="true" id="3c9c460a-e3dc-47c9-beee-a317726df169" name="Changes" comment="revert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Section.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
