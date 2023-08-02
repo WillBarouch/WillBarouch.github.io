@@ -5,6 +5,7 @@ import {
   TooltipProvider,
   TooltipTrigger
 } from "@/components/ui/tooltip"
+import {motion} from "framer-motion";
 
 // @ts-ignore
 const IconTooltip = ({ icon: IconComponent, tooltipText }) => (
