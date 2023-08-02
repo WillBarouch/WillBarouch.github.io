@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c9c460a-e3dc-47c9-beee-a317726df169" name="Changes" comment="Refactor section to component">
+    <list default="true" id="3c9c460a-e3dc-47c9-beee-a317726df169" name="Changes" comment="fix layout, add new skills">
+      <change afterPath="$PROJECT_DIR$/components/ui/Section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_07_2023_4_35_pm__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_07_2023_4_35_pm__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/IconTooltip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/IconTooltip.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ui/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,8 +130,6 @@
       <workItem from="1690856299005" duration="2180000" />
       <workItem from="1690861343679" duration="627000" />
       <workItem from="1690862688651" duration="1591000" />
-      <workItem from="1690885891255" duration="146000" />
-      <workItem from="1690930204915" duration="830000" />
     </task>
     <task id="LOCAL-00001" summary="convert to typescript">
       <created>1661854171395</created>
@@ -220,14 +222,7 @@
       <option name="project" value="LOCAL" />
       <updated>1688898383719</updated>
     </task>
-    <task id="LOCAL-00014" summary="Refactor section to component">
-      <created>1690886039061</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1690886039063</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +249,6 @@
     <MESSAGE value="add analytics" />
     <MESSAGE value="add contact, split into components" />
     <MESSAGE value="fix layout, add new skills" />
-    <MESSAGE value="Refactor section to component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor section to component" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix layout, add new skills" />
   </component>
 </project>
