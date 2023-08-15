@@ -252,7 +252,12 @@ export default function Index() {
         <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors mt-5">Mobile: +61 403 359 219</h3>
         <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors">Email: <a href="mailto:me@willbarouch.com" className="underline"> me@willbarouch.com </a></h3>
     </section>
-
+    <Section id="Contact">
+        <div className={"inline"}>
+            <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors mt-5">Mobile: +61 403 359 219</h3>
+            <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors">Email: <a href="mailto:me@willbarouch.com" className="underline"> me@willbarouch.com </a></h3>
+        </div>
+    </Section>
   <ScrollDownIndicator />
 
     </main>
