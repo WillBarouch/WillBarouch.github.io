@@ -96,7 +96,9 @@ export default function Index() {
                     <p>Biology iGCSE</p>
                     <CardDescription>Achieved Grade 9</CardDescription>
                     <p>Biology iAS</p>
+                  
                     <CardDescription>Achieved Grade A</CardDescription>
+        
                     <p>Chemistry iAS</p>
                     <CardDescription>Achieved Grade A</CardDescription>
                     <p>AP Data Science</p>
