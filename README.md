@@ -32,4 +32,4 @@ To get a local copy of this project, follow these steps:
 
 ## License
 
-This project is licensed under the [MIT license](https://opensource.org/licenses/MIT). Feel free to use and modify the code as per your needs.
+This project is licensed under the [GNU GPL v3.0]([https://opensource.org/licenses/MIT](https://spdx.org/licenses/GPL-3.0-or-later.html)). Feel free to use and modify the code as per your needs.
