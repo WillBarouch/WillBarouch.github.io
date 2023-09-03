@@ -11,7 +11,7 @@ interface props  {
 export default function Section({ children, id }:props) {
 
     const ref = useRef(null)
-    const isInView = useInView(ref, {once: true, margin: " 0px 0px 50px 0px"});
+    const isInView = useInView(ref, {once: true, margin: "0px 0px 50px 0px"});
 
     const mainControls = useAnimation();
     const slideControls = useAnimation();

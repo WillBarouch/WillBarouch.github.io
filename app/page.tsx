@@ -1,6 +1,4 @@
 'use client';
-import Image from 'next/image'
-import { motion, useScroll} from "framer-motion"
 import IconTooltip from "@/components/ui/IconTooltip";
 import ScrollDownIndicator from "@/components/ui/ScrollDownIndicator";
 import { FaGithub } from "react-icons/fa";
@@ -42,11 +40,11 @@ import Section from '@/components/ui/Section';
 export default function Index() {
 
     return (
-    <main className="flex min-h-screen flex-col items-center px-12 sm:px-24 bg-zinc-900 text-white text-left">
+    <main className="flex min-h-screen flex-col items-center px-6 sm:px-24 bg-zinc-900 text-white text-left">
 
     <Nav />
 
-    <section className={"h-screen pt-[25vh]"} id="landing">
+    <section className={"h-screen pt-[25vh] mb-56 sm:mb-0"} id="landing">
 
     <Header />
     <h2 className="scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors mt-28 justify-around">
