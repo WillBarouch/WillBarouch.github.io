@@ -24,7 +24,7 @@ const Loading: React.FC<LoadingProps> = ({ src, alt }) => {
         src={src}
         alt={alt}
         onLoad={handleImageLoad}
-        className="w-full h-full object-cover rounded-lg"
+        className="w-40vmin h-56vmin object-cover object-right-center image"
         style={{ opacity: loading ? 0 : 1 }}
         width={"3000"}
         height={"3000"}
