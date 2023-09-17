@@ -21,7 +21,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="p-5 bg-black w-full h-full">
+    <div className="p-5 bg-zinc-900 w-full h-full">
       <div className="text-center flex flex-row flex-auto my-5">
         <Link href="/" className="h-10">
           <Button variant={"outline"}>Home</Button>
