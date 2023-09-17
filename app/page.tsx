@@ -14,7 +14,7 @@ import {
     SiPandas,
     SiNumpy, SiTensorflow, SiPytorch, SiLatex, SiMicrosoftexcel, SiJupyter
 } from 'react-icons/si';
-import { FaReact, FaPython } from 'react-icons/fa';
+import { FaReact, FaPython, FaUbuntu } from 'react-icons/fa';
 import { SiBlender, SiAdobepremierepro,SiAdobephotoshop, SiAdobeillustrator,  SiAdobeaftereffects } from 'react-icons/si';
 
 import {
@@ -35,6 +35,7 @@ import Link from 'next/link';
 import Header from '@/components/ui/Header';
 import Nav from '@/components/ui/Nav';
 import Section from '@/components/ui/Section';
+import {isMobile} from "react-device-detect";
 
 
 export default function Index() {
@@ -42,12 +43,12 @@ export default function Index() {
     return (
     <main className="flex min-h-screen flex-col items-center px-6 sm:px-24 bg-zinc-900 text-white text-left">
 
-    <Nav />
+    <Nav/>
 
-    <section className={"h-screen pt-[25vh] mb-56 sm:mb-0"} id="landing">
+    <section className={`h-screen ${isMobile ? "pt-[1vh]" : "pt-[25vh]"} mb-56 sm:mb-0`} id="landing">
 
     <Header />
-    <h2 className="scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors mt-28 justify-around">
+    <h2 className="border-b py-4 text-3xl font-semibold tracking-tight transition-colors justify-around">
         I&apos;m a student in Sydney, Australia with interests in programing, medicine and computer-aided design.
     </h2>
     <div className="flex flex-row items-center justify-center mt-16">
@@ -182,7 +183,7 @@ export default function Index() {
               <IconTooltip icon={SiLatex} tooltipText="LaTeX" />
               <IconTooltip icon={SiMicrosoftexcel} tooltipText="Microsoft Excel" />
               <IconTooltip icon={SiJupyter} tooltipText="Jupyter Notebook" />
-
+              <IconTooltip icon={FaUbuntu} tooltipText="Ubuntu Linux" />
             </div>
           </CardFooter>
         </Card>
@@ -211,8 +212,8 @@ export default function Index() {
                 </CardHeader>
                 <CardContent>
                     <p>2021 - 2022</p>
-                    <p className="mx-auto underline"><a href="../files/Crimson%20Careers%20Program%20Certificates%20(5).pdf">Certificate Of Completion</a></p>
-                    <p className="mx-auto underline"><a href="../files/Willaim%20Barouch%20Uber%20Letter%20of%20Reference%20.pdf">Letter Of Reccomendation</a></p>
+                    <p className="mx-auto underline"><a href="../files/Certificate.pdf">Certificate Of Completion</a></p>
+                    <p className="mx-auto underline"><a href="../files/Reference.pdf">Letter Of Reccomendation</a></p>
                 </CardContent>
             </Card>
 

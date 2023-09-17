@@ -1,5 +1,4 @@
 'use client';
-
 import { motion, useInView, useAnimation } from "framer-motion";
 import { Children, useRef, useEffect } from "react";
 
@@ -25,7 +24,7 @@ export default function Section({ children, id }:props) {
 
     return(
         <motion.section
-          className="p-8 text-center w-full relative overflow-hidden"
+          className="p-8 text-center w-full 2xl:w-4/5 3xl:w-2/3 relative overflow-hidden"
           id={id.toLowerCase()}
           variants={{
               visible: {opacity: 1, y: 0},
