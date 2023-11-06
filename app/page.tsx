@@ -66,9 +66,9 @@ export default function Index() {
         <div className="w-24 mx-5">
             <TooltipProvider delayDuration={100}>
                 <Tooltip>
-                    <TooltipTrigger><a href="mailto:willbarouch@gmail.com"><ImMail4 size="100%"/></a></TooltipTrigger>
+                    <TooltipTrigger><a href="mailto:me@willbarouch.com"><ImMail4 size="100%"/></a></TooltipTrigger>
                     <TooltipContent>
-                        <p>willbarouch@gmail.com</p>
+                        <p>me@willbarouch.com</p>
                     </TooltipContent>
                 </Tooltip>
             </TooltipProvider>
