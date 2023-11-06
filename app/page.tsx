@@ -49,7 +49,7 @@ export default function Index() {
 
     <Header />
     <h2 className="border-b py-4 text-3xl font-semibold tracking-tight transition-colors justify-around">
-        I&apos;m a student in Sydney, Australia with interests in programing, medicine and computer-aided design.
+        I&apos;m a student in Sydney, Australia with interests in programming, medicine and computer-aided design.
     </h2>
     <div className="flex flex-row items-center justify-center mt-16">
         <div className="w-24 mx-5">
