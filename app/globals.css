@@ -6,6 +6,7 @@
   display: flex;
   width: auto;
   margin-left: -30px; /* some gutter */
+  margin-top: 80px;
 }
 
 .my-masonry-grid_column {

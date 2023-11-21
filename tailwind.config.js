@@ -8,6 +8,18 @@ module.exports = {
     './src/**/*.{ts,tsx}',
 	],
   theme: {
+    colors: {
+      'dark-text': '#eceff4',
+      'dark-background': '#2f3541',
+      'dark-primary': '#5d81ac',
+      'dark-secondary': '#4d566a',
+      'dark-accent': '#b48ead',
+       'text': '#2f3541',
+       'background': '#e5e9f0',
+       'primary': '#4f94e8',
+       'secondary': '#d8dee9',
+       'accent': '#9c689c',
+    },
     fontFamily: {
       header: ["Rubik", "sans-serif"],
       body: ["Inter", "sans-serif"],

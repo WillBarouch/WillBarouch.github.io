@@ -36,12 +36,32 @@ import Header from '@/components/ui/Header';
 import Nav from '@/components/ui/Nav';
 import Section from '@/components/ui/Section';
 import {isMobile} from "react-device-detect";
+import {useEffect, useState} from "react";
 
 
 export default function Index() {
 
+    let [isDarkMode, setDarkMode] = useState(true);
+
+    useEffect(() => {
+        const handleColorSchemeChange = (event:any) => {
+            setDarkMode(event.matches);
+        };
+
+        const darkModeMatcher = window.matchMedia('(prefers-color-scheme: dark)');
+        setDarkMode(darkModeMatcher.matches); // Set initial value
+
+        darkModeMatcher.addEventListener('change', handleColorSchemeChange);
+
+        return () => {
+            darkModeMatcher.removeEventListener('change', handleColorSchemeChange);
+        };
+    }, []);
+
+
     return (
-    <main className="flex min-h-screen flex-col items-center px-6 sm:px-24 bg-zinc-900 text-white text-left">
+    <div className={isDarkMode ? "dark" : ""}>
+    <main className={`flex min-h-screen flex-col items-center px-6 sm:px-24 bg-background dark:bg-dark-background text-text dark:text-dark-text text-left`}>
 
     <Nav/>
 
@@ -246,5 +266,6 @@ export default function Index() {
     </Section>
   <ScrollDownIndicator />
 </main>
+</div>
   )
 }

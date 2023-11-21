@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <h1 className="scroll-m-20 text-7xl md:text-8xl font-extrabold tracking-tight mt-5 text-left block" >
       Hi I&apos;m&nbsp;
-      <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+      <span className="bg-gradient-to-r from-primary to-accent dark:from-dark-primary dark:to-dark-accent bg-clip-text text-purple">
           {letters.map((letter, i) => (
             <motion.span
               key={i}
@@ -27,6 +27,7 @@ const Header = () => {
               variants={letterVariants}
               initial="hidden"
               animate="visible"
+              style={{ color: 'rgba(0,0,0,0)' }}
             >
               {letter}
             </motion.span>
