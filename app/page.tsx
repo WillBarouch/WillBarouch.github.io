@@ -105,13 +105,15 @@ export default function Index() {
                     <CardDescription>2014 - Present</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <p>Grade 9</p>
+                    <p>Full Academic Colours 2020 ‑ 2023</p>
+                    <p>Gold Medal Science 2021 & 2022</p>
+                    <p>3 Year Public Speaking Course</p>
                 </CardContent>
             </Card>
             <Card>
                 <CardHeader >
                     <CardTitle>Crimson Global Academy</CardTitle>
-                    <CardDescription>2021 - Present</CardDescription>
+                    <CardDescription>2021 - 2023</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <p>Biology iGCSE</p>
@@ -128,10 +130,14 @@ export default function Index() {
            <Card>
                 <CardHeader >
                     <CardTitle>University of New South Wales Selective Gifted Program</CardTitle>
-                    <CardDescription>2020</CardDescription>
+                    <CardDescription>2017, 2020</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <p>Neuroanatomy Course</p>
+                    <p>The Brain in Health and Disease</p>
+                    <CardDescription> Neuroanatomy Course </CardDescription>
+                    <br/>
+                    <p>The Games People Play</p>
+                    <CardDescription>Game Psychology Course</CardDescription>
                 </CardContent>
             </Card>
         </div>
