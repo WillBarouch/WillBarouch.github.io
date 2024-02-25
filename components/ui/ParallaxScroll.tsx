@@ -67,6 +67,8 @@ export const ParallaxScroll = ({
                     height="400"
                     width="400"
                     alt="thumbnail"
+                    loading={"lazy"}
+
                 />
               </motion.div>
           ))}
@@ -79,7 +81,9 @@ export const ParallaxScroll = ({
                     className="h-full w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
                     height="400"
                     width="400"
+                    loading={"lazy"}
                     alt="thumbnail"
+
                 />
               </motion.div>
           ))}
@@ -92,7 +96,9 @@ export const ParallaxScroll = ({
                     className="h-full w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
                     height="400"
                     width="400"
+                    loading={"lazy"}
                     alt="thumbnail"
+
                 />
               </motion.div>
           ))}

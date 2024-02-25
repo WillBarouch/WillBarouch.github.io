@@ -4,7 +4,7 @@ import {ParallaxScroll} from "@/components/ui/ParallaxScroll";
 
 const images: string[] = [];
 for (let i = 1; i < 23; i++) {
-  const image = `/portfolio/renders/${i}.png`;
+  const image = `/portfolio/renders/${i}.webp`;
   images.push(image);
 }
 
