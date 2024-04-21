@@ -4,55 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c9c460a-e3dc-47c9-beee-a317726df169" name="Changes" comment="add dark mode, new scroll">
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/10.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/11.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/12.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/13.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/14.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/15.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/16.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/17.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/18.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/19.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/20.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/21.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/22.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/6.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/7.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/8.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/renders/9.webp" afterDir="false" />
+    <list default="true" id="3c9c460a-e3dc-47c9-beee-a317726df169" name="Changes" comment="optimise image load">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/portfolio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portfolio/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/ParallaxScroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/ParallaxScroll.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/portfolio/renders/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/files/Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/files/Resume.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +44,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "WillBarouch"
+  }
+}]]></component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
@@ -95,6 +57,12 @@
       </list>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/WillBarouch/WillBarouch.github.io.git",
+    "accountId": "d6b20506-5371-4541-9610-20cb71d20ae9"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -164,6 +132,13 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -199,7 +174,9 @@
       <workItem from="1690861343679" duration="627000" />
       <workItem from="1690862688651" duration="1591000" />
       <workItem from="1692073392824" duration="389000" />
-      <workItem from="1708832402467" duration="665000" />
+      <workItem from="1708832402467" duration="1308000" />
+      <workItem from="1708898471443" duration="9000" />
+      <workItem from="1713704749671" duration="913000" />
     </task>
     <task id="LOCAL-00001" summary="convert to typescript">
       <created>1661854171395</created>
@@ -300,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708832205471</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="optimise image load">
+      <option name="closed" value="true" />
+      <created>1708833100582</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708833100582</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +313,7 @@
     <MESSAGE value="add contact, split into components" />
     <MESSAGE value="fix layout, add new skills" />
     <MESSAGE value="add dark mode, new scroll" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dark mode, new scroll" />
+    <MESSAGE value="optimise image load" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimise image load" />
   </component>
 </project>

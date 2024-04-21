@@ -40,7 +40,7 @@ export default function Nav() {
         });
 
         if (!isMobile) {
-            setLinks(["Education", "Skills", "Experience", "Contact", "Portfolio", "Resume" ]);
+            setLinks(["Education", "Skills", "Debating", "Experience", "Contact", "Portfolio", "Resume" ]);
         }
 
     }, [])

@@ -208,6 +208,37 @@ export default function Index() {
         </Card>
     </Section>
 
+    <Section id="Debating">
+        <div className="flex flex-auto w-full flex-wrap justify-center">
+            <Card>
+                <CardHeader >
+                    <CardTitle><Link href={"https://icyd2024.calicotab.com/icyd2024/"}>International Competition For Young Debaters</Link></CardTitle>
+                    <CardDescription>Oxford Union, UK — 2024</CardDescription>
+                </CardHeader>
+                <CardContent>
+                    <p> 4th open team </p>
+                    <p> 1st novice team </p>
+                    <p> 4th novice speaker </p>
+                    <p> 2nd open speaker <Link href={"https://icydanz2024.calicotab.com/ICYDANZ2024/"}>(AU/NZ regional
+                        round)</Link></p>
+                    <p> 2nd open team <Link href={"https://icydanz2024.calicotab.com/ICYDANZ2024/"}> (AU/NZ regional round)</Link></p>
+                </CardContent>
+            </Card>
+
+            <Card>
+                <CardHeader >
+                    <CardTitle><Link href={"https://cambridgeanz2024.calicotab.com/CambridgeANZ2024/"}>Cambridge Schools AU/NZ</Link></CardTitle>
+                    <CardDescription>Saint Ignatius&apos; College, Riverview — 2024</CardDescription>
+                </CardHeader>
+                <CardContent>
+                    <p> Semifinalist</p>
+                    <p> 8th open team </p>
+                </CardContent>
+            </Card>
+        </div>
+    </Section>
+
+
     <Section id="Experience">
         <div className="flex flex-auto w-full flex-wrap justify-center">
             <Card>
