@@ -11,12 +11,12 @@
   "dependencies": {
     "@aws-sdk/client-s3": "^3.370.0",
     "@aws-sdk/signature-v4-crt": "^3.370.0",
+    "@motionone/utils": "^10.17.0",
     "@radix-ui/react-dialog": "^1.0.4",
     "@radix-ui/react-popover": "^1.0.6",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.6",
     "@types/node": "20.4.1",
-    "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "@vercel/analytics": "^1.0.1",
     "@vercel/speed-insights": "^1.0.10",
@@ -48,6 +48,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@types/react": "^18.3.2",
     "@types/webpack-env": "^1.18.1"
   }
 }
