@@ -105,6 +105,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\Willb\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+        <option name="reportGuid" value="7cf2d603-6e55-4c2a-a63b-9b7d164b335c" />
+        <option name="reportName" value="WillBarouch.github.io/qodana/2024-12-03" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>

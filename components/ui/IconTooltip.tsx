@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger
-} from "@/components/ui/tooltip"
-import {motion} from "framer-motion";
+import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip"
 
 // @ts-ignore
 const IconTooltip = ({ icon: IconComponent, tooltipText }) => (
