@@ -74,15 +74,16 @@ export default function Index() {
                         </CardHeader>
                         <CardContent>
                             <p>Full Academic Colours (2021&ndash;25)</p>
-                            <p>Gold Medal Accelerated Biology (2024, 2025)</p>
-                            <p>Gold Medal Accelerated Science Extension (2025)</p>
+                            <p>HSC Band 6 (94/100) &ndash; Internal Gold Medal Accelerated Biology (2025)</p>
+                            <p>HSC Band 6 (45/50) &ndash; Internal Gold Medal Accelerated Science Extension (2025)</p>
+                            <p>HSC Band 6 (97/100) &ndash; Accelerated Mathematics Advanced (2025)</p>
                             <p>Gold Medal Computing Technology (2025)</p>
                             <p>Applied Sciences Award (2025)</p>
-                            <p>Australian Defence Force Future Innovators Awards (2024)</p>
+                            <p>Australian Defence Force Future Innovators Award (2024)</p>
                             <p>Gold Medal Mathematics (2024)</p>
                             <p>Silver Medal Computing Technology (2024)</p>
                             <p>Silver Medal Science (2023)</p>
-                            <p>HSC Mathematics, Biology &amp; Science Extension accelerant</p>
+                            <p>HSC acceleration: Mathematics, Biology, Science Extension</p>
                         </CardContent>
                     </Card>
                     <Card>
