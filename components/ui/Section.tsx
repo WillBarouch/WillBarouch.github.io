@@ -50,7 +50,7 @@ export default function Section({ children, id }:props) {
                 initial="hidden"
                 animate={slideControls}
                 transition={{duration: 0.5, ease: "easeIn"}}
-                className="absolute top-4 bottom-4 left-0 right-0 bg-white z-[20]"
+                className="absolute top-4 bottom-4 left-0 right-0 bg-white z-20"
             >
 
             </motion.div>

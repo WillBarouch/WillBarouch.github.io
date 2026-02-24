@@ -1,6 +1,72 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:is(.dark *));
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+
+ {
+  --color-*: initial;
+  --color-dark-text: #eceff4;
+  --color-dark-background: #2f3541;
+  --color-dark-primary: #5d81ac;
+  --color-dark-secondary: #4d566a;
+  --color-dark-accent: #b48ead;
+  --color-text: #2f3541;
+  --color-background: #e5e9f0;
+  --color-primary: #4f94e8;
+  --color-secondary: #d8dee9;
+  --color-accent: #9c689c;
+
+  --font-*: initial;
+  --font-header: Rubik, sans-serif;
+  --font-body: Inter, sans-serif;
+
+  --breakpoint-3xl: 2400px;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 root {
   font-family: Inter, sans-serif;
