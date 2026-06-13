@@ -2,8 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Header = () => {
-  const name = 'Will Barouch';
+const Header = ({ name = 'Will Barouch' }: { name?: string }) => {
   const letters = [...name];
 
   const letterVariants = {
