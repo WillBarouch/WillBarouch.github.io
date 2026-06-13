@@ -9,6 +9,8 @@
  * It is idempotent — documents use fixed _ids and are created-or-replaced, so
  * re-running resets the seeded content to the values below.
  */
+import { readFileSync } from 'fs';
+import { join } from 'path';
 import { config as loadEnv } from 'dotenv';
 import { createClient } from '@sanity/client';
 import { LexoRank } from 'lexorank';
@@ -30,6 +32,42 @@ const client = createClient({ projectId, dataset, token, apiVersion, useCdn: fal
 
 type SeedDoc = { _id: string; [key: string]: unknown };
 
+/** A Sanity reference to an uploaded file asset. */
+function fileRef(assetId: string) {
+    return { _type: 'file', asset: { _type: 'reference', _ref: assetId } };
+}
+
+/**
+ * Recursively add a `_key` to every object that is an item of an array, as
+ * Sanity requires for array-of-object fields. Leaves non-array-item objects
+ * (like file/asset references) untouched.
+ */
+function addKeys<T>(value: T): T {
+    if (Array.isArray(value)) {
+        return value.map((item, i) =>
+            item && typeof item === 'object' && !Array.isArray(item)
+                ? addKeys({ _key: `k${i}`, ...(item as Record<string, unknown>) })
+                : item,
+        ) as unknown as T;
+    }
+    if (value && typeof value === 'object') {
+        const out: Record<string, unknown> = {};
+        for (const [k, v] of Object.entries(value)) out[k] = addKeys(v);
+        return out as T;
+    }
+    return value;
+}
+
+/** Upload a PDF from /public/files and return its asset _id. */
+async function uploadPdf(filename: string): Promise<string> {
+    const buffer = readFileSync(join(process.cwd(), 'public', 'files', filename));
+    const asset = await client.assets.upload('file', buffer, {
+        filename,
+        contentType: 'application/pdf',
+    });
+    return asset._id;
+}
+
 /** Generate increasing LexoRank strings, matching the orderable-list scheme. */
 function ranker() {
     let rank = LexoRank.min();
@@ -50,7 +88,7 @@ const settings = {
     email: 'me@willbarouch.com',
     githubUrl: 'https://github.com/WillBarouch',
     githubLabel: 'WillBarouch',
-    resumeUrl: '/files/Resume.pdf',
+    // resumeFile is attached at seed time after the PDF is uploaded.
 };
 
 const education: SeedDoc[] = [
@@ -179,10 +217,11 @@ const experience: SeedDoc[] = [
         _id: 'experience.uber',
         title: 'Uber',
         subtitle: 'Internship',
+        // The two PDF lines get a `file` asset attached at seed time.
         details: [
             { text: '2021–2022' },
-            { text: 'Certificate Of Completion', url: '/files/Certificate.pdf' },
-            { text: 'Letter Of Reccomendation', url: '/files/Reference.pdf' },
+            { text: 'Certificate Of Completion' },
+            { text: 'Letter Of Reccomendation' },
         ],
     },
     {
@@ -194,28 +233,42 @@ const experience: SeedDoc[] = [
 ];
 
 async function seed() {
+    // Upload PDFs to Sanity so they are CMS-hosted, then attach the references.
+    console.log('Uploading PDFs...');
+    const [resumeId, certId, refId] = await Promise.all([
+        uploadPdf('Resume.pdf'),
+        uploadPdf('Certificate.pdf'),
+        uploadPdf('Reference.pdf'),
+    ]);
+    (settings as Record<string, unknown>).resumeFile = fileRef(resumeId);
+
+    const uber = experience.find((d) => d._id === 'experience.uber')!;
+    const uberDetails = uber.details as Record<string, unknown>[];
+    uberDetails[1].file = fileRef(certId);
+    uberDetails[2].file = fileRef(refId);
+
     const tx = client.transaction();
 
-    tx.createOrReplace(settings);
+    tx.createOrReplace(addKeys(settings));
 
     const eduRank = ranker();
     for (const doc of education) {
-        tx.createOrReplace({ _type: 'education', orderRank: eduRank(), ...doc });
+        tx.createOrReplace(addKeys({ _type: 'education', orderRank: eduRank(), ...doc }));
     }
 
     const skillRank = ranker();
     for (const doc of skills) {
-        tx.createOrReplace({ _type: 'skillCategory', orderRank: skillRank(), ...doc });
+        tx.createOrReplace(addKeys({ _type: 'skillCategory', orderRank: skillRank(), ...doc }));
     }
 
     const debateRank = ranker();
     for (const doc of debating) {
-        tx.createOrReplace({ _type: 'debating', orderRank: debateRank(), ...doc });
+        tx.createOrReplace(addKeys({ _type: 'debating', orderRank: debateRank(), ...doc }));
     }
 
     const expRank = ranker();
     for (const doc of experience) {
-        tx.createOrReplace({ _type: 'experience', orderRank: expRank(), ...doc });
+        tx.createOrReplace(addKeys({ _type: 'experience', orderRank: expRank(), ...doc }));
     }
 
     await tx.commit();

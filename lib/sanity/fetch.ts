@@ -14,19 +14,24 @@ export interface SiteSettings {
     githubUrl: string;
     githubLabel: string;
     resumeUrl?: string;
+    resumeFileUrl?: string;
 }
 
 export interface DetailLine {
+    _key?: string;
     text: string;
     muted?: boolean;
 }
 
 export interface LinkedLine {
+    _key?: string;
     text: string;
     url?: string;
+    fileUrl?: string;
 }
 
 export interface SkillIcon {
+    _key?: string;
     iconKey: string;
     label: string;
 }

@@ -66,9 +66,9 @@ export default function ResumeContent({ data }: { data: ResumeData }) {
                             <CardContent>
                                 {item.details?.map((detail, i) =>
                                     detail.muted ? (
-                                        <CardDescription key={i}>{detail.text}</CardDescription>
+                                        <CardDescription key={detail._key ?? i}>{detail.text}</CardDescription>
                                     ) : (
-                                        <p key={i}>{detail.text}</p>
+                                        <p key={detail._key ?? i}>{detail.text}</p>
                                     )
                                 )}
                             </CardContent>
@@ -94,7 +94,7 @@ export default function ResumeContent({ data }: { data: ResumeData }) {
                                     const IconComponent = getIcon(icon.iconKey);
                                     if (!IconComponent) return null;
                                     return (
-                                        <IconTooltip key={i} icon={IconComponent} tooltipText={icon.label} />
+                                        <IconTooltip key={icon._key ?? i} icon={IconComponent} tooltipText={icon.label} />
                                     );
                                 })}
                             </div>
@@ -119,7 +119,7 @@ export default function ResumeContent({ data }: { data: ResumeData }) {
                             </CardHeader>
                             <CardContent>
                                 {item.results?.map((result, i) => (
-                                    <p key={i}>
+                                    <p key={result._key ?? i}>
                                         {result.url ? (
                                             <Link href={result.url}>{result.text}</Link>
                                         ) : (
@@ -142,15 +142,16 @@ export default function ResumeContent({ data }: { data: ResumeData }) {
                                 {item.subtitle && <CardDescription>{item.subtitle}</CardDescription>}
                             </CardHeader>
                             <CardContent>
-                                {item.details?.map((detail, i) =>
-                                    detail.url ? (
-                                        <p key={i} className="mx-auto underline">
-                                            <a href={detail.url}>{detail.text}</a>
+                                {item.details?.map((detail, i) => {
+                                    const href = detail.fileUrl || detail.url;
+                                    return href ? (
+                                        <p key={detail._key ?? i} className="mx-auto underline">
+                                            <a href={href}>{detail.text}</a>
                                         </p>
                                     ) : (
-                                        <p key={i}>{detail.text}</p>
-                                    )
-                                )}
+                                        <p key={detail._key ?? i}>{detail.text}</p>
+                                    );
+                                })}
                             </CardContent>
                         </Card>
                     ))}

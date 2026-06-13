@@ -37,9 +37,16 @@ export const siteSettings = defineType({
             type: 'string',
         }),
         defineField({
+            name: 'resumeFile',
+            title: 'Resume PDF',
+            description: 'Upload the resume PDF here. The /resume route redirects to it.',
+            type: 'file',
+            options: { accept: 'application/pdf' },
+        }),
+        defineField({
             name: 'resumeUrl',
-            title: 'Resume PDF URL',
-            description: 'Path or URL the /resume route redirects to.',
+            title: 'Resume URL (fallback)',
+            description: 'Optional external URL, used only if no Resume PDF is uploaded above.',
             type: 'string',
         }),
     ],

@@ -34,9 +34,15 @@ export const experience = defineType({
                             validation: (rule) => rule.required(),
                         }),
                         defineField({
+                            name: 'file',
+                            title: 'PDF / file (optional)',
+                            description: 'Upload a file to link this line to. Takes precedence over the URL below.',
+                            type: 'file',
+                        }),
+                        defineField({
                             name: 'url',
-                            title: 'Link (optional)',
-                            description: 'Turns the line into a link when set.',
+                            title: 'Link URL (optional)',
+                            description: 'External link. Used only if no file is uploaded above.',
                             type: 'string',
                         }),
                     ],
